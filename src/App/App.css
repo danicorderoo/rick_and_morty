@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../img/ChargeVectorThin-d9qdR.ttf") format("truetype");
+}
+
+.App {
+  font-family: "MyFont";
+  margin-top: 170px; /* Add a top margin to avoid content overlay */
+  padding-bottom: 14px;
+  margin-right: -12px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 448px;
+  border-bottom: #c0df40 solid 1px;
+  border-top: #c0df40 solid 1px;
+  -webkit-text-stroke: 0.5px #3daec2ab;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #c0df40;
+  background-color: rgba(32, 35, 41, 0.7);
+  height: 6em;
+}
+
+.upButton {
+  margin-right: -38px;
+  background-image: url(../img/astronav.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.upButton:hover {
+  height: 3.5em;
+  width: 3.5em;
+  transition: 2s;
+  box-shadow: 0px 0px 40px #3dadc2;
+}

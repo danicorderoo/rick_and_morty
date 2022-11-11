@@ -1,0 +1,9 @@
+.cartas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}

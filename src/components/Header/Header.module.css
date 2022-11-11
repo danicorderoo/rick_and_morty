@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 99%;
+  top: 0;
+  height: 6em;
+  position: fixed;
+  background-color: rgba(32, 35, 41, 1);
+  border-bottom: #c0df40 solid 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.sub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.divTitle {
+  height: 10em;
+  width: 20em;
+  background-image: url(../../img/title.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+}
+
+.home {
+  top: 0;
+  height: 5em;
+  width: 5em;
+  margin-left: 10em;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/planeta-tierra.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.home:hover {
+  transition: 2s;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 40px #8db001;
+}
+
+.about {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/astronauta.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.about:hover {
+  transition: 2s;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 40px #8db001;
+}
+
+@media (max-width: 800px) {
+  .home {
+    margin-bottom: -10px;
+    height: 3em;
+    width: 3em;
+  }
+  .about {
+    height: 3em;
+    width: 3em;
+  }
+  .divTitle {
+    height: 5em;
+    width: 16em;
+  }
+  .sub {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .sub {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home {
+    height: 3em;
+    width: 3em;
+  }
+  .about {
+    height: 3em;
+    width: 3em;
+  }
+  .divTitle {
+    background-image: url(../../img/title.png);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 70%;
+  }
+}

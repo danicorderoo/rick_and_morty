@@ -1,0 +1,170 @@
+.human {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.human:hover {
+  transition: 3s;
+  background-image: url(../../img/tierra.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(92, 187, 255, 1);
+}
+
+.alien {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.alien:hover {
+  transition: 3s;
+  background-image: url(../../img/alien.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 55% -60%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(21, 185, 48);
+}
+
+.robot {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.robot:hover {
+  transition: 3s;
+  background-image: url(../../img/robot.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 50% -130%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.humanoid {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.humanoid:hover {
+  transition: 3s;
+  background-image: url(../../img/humanoid.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(184, 22, 22);
+}
+
+.mythological {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.mythological:hover {
+  transition: 3s;
+  background-image: url(../../img/mythological.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 0 -53.5%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(210, 225, 8);
+}
+
+.animal {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.animal:hover {
+  transition: 3s;
+  background-image: url(../../img/animal.jpg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  transform: translateY(-3px);
+  background-position: 20% -45%;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgb(222, 135, 13);
+}
+
+.poopy {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.poopy:hover {
+  transition: 3s;
+  background-image: url(../../img/poopy.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 55% -25%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(57, 45, 5);
+}
+
+.unknown {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.unknown:hover {
+  transition: 3s;
+  background-image: url(../../img/unknown.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  transform: translateY(-3px);
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.default {
+  background-color: #0e171c;
+  color: rgb(246, 3, 3);
+}
+
+.default:hover {
+  transition: 3s;
+  background-image: url(../../img/Anatomy_Park_7.webp);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  transform: translateY(-3px);
+  background-position: 50% 0%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.cronenberg {
+  background-color: #0e171c;
+  color: gray;
+}
+
+.cronenberg:hover {
+  transition: 3s;
+  background-image: url(../../img/cronenberg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: translateY(-3px);
+  background-position: 20% -10%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(255, 0, 200);
+}
+
+.divImg {
+  transition: 0.5s;
+  height: 300px;
+  width: 300px;
+}
+
+.divImg:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 140px;
+}
