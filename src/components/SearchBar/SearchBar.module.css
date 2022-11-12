@@ -1,0 +1,45 @@
+.Entrada {
+  height: 30px;
+  width: 120px;
+  border: #c0df40 solid 1px;
+}
+.Entrada:hover {
+  background-color: #d3e880;
+  transition: 1s;
+}
+.Entrada:focus {
+  background-color: #c0df40;
+}
+
+.Buttons {
+  font-family: "MyFont";
+  font-weight: bolder;
+  border-radius: 5px;
+  margin: 5px;
+  height: 30px;
+  width: 80px;
+  padding: 5px;
+  background-color: rgba(61, 174, 194, 0.6);
+  cursor: pointer;
+  border-color: transparent;
+  transition: 1s;
+  color: black;
+}
+
+.Buttons:hover {
+  background-color: #c0df40;
+  transition: 1.5s;
+  font-size: 0.9em;
+  box-shadow: 0px 0px 10px #8db001;
+}
+
+.Search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Botonera {
+  display: flex;
+  flex-direction: row;
+}

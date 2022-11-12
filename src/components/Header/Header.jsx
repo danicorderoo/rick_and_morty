@@ -16,39 +16,41 @@ export default function Header(props) {
   return (
     <div className={styles.header}>
       <div className={styles.sub}>
-        <div className={styles.divTitle}></div>
-
-        <div className={styles.menu}>
-          <button
-            data-tip
-            data-for="homeTip"
-            onClick={backToHome}
-            className={styles.home}
-          />
-          <button
-            data-tip
-            data-for="aboutTip"
-            onClick={backToAbout}
-            className={styles.about}
-          />
-          <ReactTooltip
-            id="homeTip"
-            place="bottom"
-            effect="solid"
-            delayShow={500}>
-            HOME
-          </ReactTooltip>
-          <ReactTooltip
-            id="aboutTip"
-            place="bottom"
-            effect="solid"
-            delayShow={500}>
-            ABOUT
-          </ReactTooltip>
+        <div className={styles.divTitle}>
+          <div className={styles.menu}>
+            <button
+              data-tip
+              data-for="homeTip"
+              onClick={backToHome}
+              className={styles.home}
+            />
+            <button
+              data-tip
+              data-for="aboutTip"
+              onClick={backToAbout}
+              className={styles.about}
+            />
+            <ReactTooltip
+              id="homeTip"
+              place="bottom"
+              effect="solid"
+              delayShow={2000}>
+              HOME
+            </ReactTooltip>
+            <ReactTooltip
+              id="aboutTip"
+              place="bottom"
+              effect="solid"
+              delayShow={2000}>
+              ABOUT
+            </ReactTooltip>
+          </div>
         </div>
       </div>
 
-      <Bar onSearch={props.onSearch} onSearchAll={props.onSearchAll} />
+      <div>
+        <Bar onSearch={props.onSearch} onSearchAll={props.onSearchAll} />
+      </div>
     </div>
   );
 }

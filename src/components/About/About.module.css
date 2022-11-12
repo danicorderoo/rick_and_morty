@@ -2,3 +2,14 @@
   font-family: "My Font Name";
   src: url("../../img/VT323-Regular.ttf") format("truetype");
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+  margin-top: 30px;
+}

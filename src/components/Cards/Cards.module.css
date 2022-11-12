@@ -7,3 +7,12 @@
   padding-top: 15px;
   margin-bottom: 15px;
 }
+
+.Container {
+  background-color: rgba(32, 35, 41, 0.6);
+  border-bottom: #c0df40 solid 1px;
+  border-top: #c0df40 solid 1px;
+  padding-top: 15px;
+  margin-top: 30px;
+  margin-bottom: -415px;
+}

@@ -1,21 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  padding: 40px;
-  margin-top: 30px;
-`;
+import styles from "./About.module.css";
 
 export default function About(props) {
   return (
-    <Container>
+    <div className={styles.container}>
       <h1>Holisss soy About</h1>
-    </Container>
+    </div>
   );
 }
