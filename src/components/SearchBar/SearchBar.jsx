@@ -9,6 +9,11 @@ export default function SearchBar(props) {
     setId(event.target.value);
   };
 
+  const handleClick = (event) => {
+    setId("");
+    props.onSearch(id);
+  };
+
   return (
     <div className={styles.Search}>
       <div>
@@ -34,26 +39,33 @@ export default function SearchBar(props) {
           className={styles.Buttons}
           data-tip
           data-for="searchTip"
-          onClick={() => props.onSearch(id)}>
+          onClick={handleClick}>
           Agregar
         </button>
         <button
           className={styles.Buttons}
           data-tip
-          data-for="searchTip"
+          data-for="allTip"
           onClick={() => props.onSearchAll()}>
-          All
+          <strong>All</strong>
         </button>
       </div>
 
-      <ReactTooltip id="romdomTip" place="left" effect="solid" delayShow={2000}>
-        Agregar de forma aleatoria
+      <ReactTooltip
+        id="romdomTip"
+        place="bottom"
+        effect="left"
+        delayShow={2000}>
+        AGREGA ALEATORIO
       </ReactTooltip>
       <ReactTooltip id="searchTip" place="left" effect="solid" delayShow={2000}>
-        Agregar por ID
+        AGREGA ID
       </ReactTooltip>
       <ReactTooltip id="inputTip" place="left" effect="solid" delayShow={2000}>
         Ingresa el ID
+      </ReactTooltip>
+      <ReactTooltip id="allTip" place="left" effect="solid" delayShow={2000}>
+        AGREGA TODAS
       </ReactTooltip>
     </div>
   );

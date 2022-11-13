@@ -6,11 +6,15 @@ import ReactTooltip from "react-tooltip";
 
 export default function Header(props) {
   const navigate = useNavigate();
+
   const backToHome = () => {
-    navigate("/");
+    navigate("/home");
   };
   const backToAbout = () => {
     navigate("/about");
+  };
+  const backToFavorites = () => {
+    navigate("/favorites");
   };
 
   return (
@@ -30,6 +34,12 @@ export default function Header(props) {
               onClick={backToAbout}
               className={styles.about}
             />
+            <button
+              data-tip
+              data-for="favoritesTip"
+              onClick={backToFavorites}
+              className={styles.favorites}
+            />
             <ReactTooltip
               id="homeTip"
               place="bottom"
@@ -43,6 +53,13 @@ export default function Header(props) {
               effect="solid"
               delayShow={2000}>
               ABOUT
+            </ReactTooltip>
+            <ReactTooltip
+              id="favoritesTip"
+              place="bottom"
+              effect="solid"
+              delayShow={2000}>
+              favorites
             </ReactTooltip>
           </div>
         </div>

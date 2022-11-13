@@ -1,25 +1,24 @@
 import React from "react";
-import Card from "../Card/Card";
-import styles from "./Cards.module.css";
+import CardF from "../CardF/CardF";
+import styles from "./Favorites.module.css";
+import { useSelector } from "react-redux";
 
 export default function Cards(props) {
-  const { characters } = props;
+  let favorites = useSelector((state) => state.myFavorites);
   return (
     <div className={styles.Container}>
       <div className={styles.cartas}>
-        {characters.length ? null : (
+        {favorites.length ? null : (
           <div className={styles.conter}>
-            <h1>AGREGA UNA CARTA</h1>
+            <h1>SIN FAVORITOS</h1>
             <span className={styles.parpadea}>
-              <strong>
-                el menu se encuentra en la parte superior de la APP
-              </strong>
+              <strong>AGREGALOS DESDE HOME</strong>
             </span>
             <hr />
           </div>
         )}
-        {characters.map((card) => (
-          <Card
+        {favorites.map((card) => (
+          <CardF
             name={card.name}
             species={card.species}
             gender={card.gender}

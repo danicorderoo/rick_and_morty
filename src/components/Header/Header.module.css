@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-around;
-
   align-items: center;
   padding: 10px;
   width: 100%;
@@ -74,6 +73,27 @@
   box-shadow: 0px 0px 40px #8db001;
 }
 
+.favorites {
+  height: 5em;
+  width: 5em;
+  margin-top: 4em;
+  border-radius: 50%;
+  background-color: #3daec299;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/amor-verde.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.favorites:hover {
+  transition: 2s;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 40px #8db001;
+}
+
 @media (max-width: 800px) {
   .home {
     margin-bottom: -10px;
@@ -83,14 +103,6 @@
   .about {
     height: 3em;
     width: 3em;
-  }
-  .divTitle {
-    height: 5em;
-    width: 16em;
-  }
-  .sub {
-    flex-direction: column;
-    justify-content: flex-start;
   }
 }
 
@@ -106,11 +118,5 @@
   .about {
     height: 3em;
     width: 3em;
-  }
-  .divTitle {
-    background-image: url(../../img/title.png);
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-size: 70%;
   }
 }

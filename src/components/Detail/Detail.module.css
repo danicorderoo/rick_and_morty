@@ -1,6 +1,6 @@
 @font-face {
   font-family: "My Font Name";
-  src: url("../../img/MajorMonoDisplay-Regular.ttf") format("truetype");
+  src: url("../../img/ChargeVectorThin-d9qdR.ttf") format("truetype");
 }
 .main {
   margin-top: 30px;
@@ -8,10 +8,12 @@
 }
 
 .IMG {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: 0px 0px 70px #000000;
   border-radius: 50%;
   overflow: hidden;
+
   height: 300px;
+  width: 300px;
 }
 
 .info {
@@ -40,6 +42,6 @@
   }
   .IMG {
     margin-top: 30px;
-    box-shadow: 0px 0px 50px #000000;
+    box-shadow: 0px 0px 70px #000000;
   }
 }

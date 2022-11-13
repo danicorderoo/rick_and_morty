@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Card.module.css";
+import styles from "./CardF.module.css";
 import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import { useDispatch, useSelector } from "react-redux";
@@ -68,29 +68,20 @@ export default function Card(props) {
   return (
     <div className={`${styles.Container} ${especie}`}>
       <div className={styles.DivHeader}>
-        <div>
-          <h2>{props.name}</h2>
-        </div>
-        <div className={styles.Botonera}>
-          {isFav ? (
-            <button
-              className={`${styles.hearth} ${styles.onHearth}`}
-              onClick={handleFavorite}>
-              💚
-            </button>
-          ) : (
-            <button
-              className={`${styles.hearth} ${styles.offHearth}`}
-              onClick={handleFavorite}>
-              🤍
-            </button>
-          )}
+        <h2>{props.name}</h2>
+        {isFav ? (
           <button
-            className={styles.Buttons}
-            onClick={() => props.onClose(props.id)}>
-            X
+            className={`${styles.hearth} ${styles.onHearth}`}
+            onClick={handleFavorite}>
+            💚
           </button>
-        </div>
+        ) : (
+          <button
+            className={`${styles.hearth} ${styles.offHearth}`}
+            onClick={handleFavorite}>
+            🤍
+          </button>
+        )}
       </div>
 
       <div className={styles.divImg}>

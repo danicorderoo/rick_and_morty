@@ -4,23 +4,35 @@ import Header from "../components/Header/Header.jsx";
 import About from "../components/About/About.jsx";
 import Detail from "../components/Detail/Detail.jsx";
 import Error from "../components/Error/Error404.jsx";
+import Login from "../components/Login/Login.jsx";
+import Favorites from "../components/Favorites/Favorites.jsx";
 import React from "react";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import ScrollToTop from "react-scroll-to-top";
+import { useDispatch } from "react-redux";
+import * as actions from "../redux/actions/index";
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  const [access, setAccess] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const username = "danielc@soyhenry.com";
+  const password = "Daniel.1";
+  const dispatch = useDispatch();
+
+  function login(userDate) {
+    if (userDate.password === password && userDate.username === username) {
+      setAccess(true);
+      navigate("/home");
+    }
+  }
 
   React.useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character/1")
-      .then((res) => res.json())
-      .then((data) => {
-        setCharacters((characters) => [...characters, data]);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+    !access && navigate("/");
+  }, [access, navigate]);
 
   const onSearch = (character) => {
     for (let i = 0; i < characters.length; i++) {
@@ -94,7 +106,7 @@ function App() {
     for (let i = 1; i < 101; i++) {
       consult1 = [...consult1, i];
     }
-    console.log(consult1);
+
     fetch(`https://rickandmortyapi.com/api/character/${consult1}`)
       .then((response) => response.json())
       .then((data) => {
@@ -135,6 +147,7 @@ function App() {
         setCharacters((eliminado) =>
           eliminado.filter((char) => char.id !== id)
         );
+        dispatch(actions.delteFavorite(id));
         Swal.fire({
           title: "Eliminada!",
           text: "Olvídala de una vez por todas chico",
@@ -159,20 +172,25 @@ function App() {
 
   return (
     <div className="App">
-      <Header onSearch={onSearch} onSearchAll={onSearchAll} />
+      {location.pathname === "/" ? null : (
+        <Header onSearch={onSearch} onSearchAll={onSearchAll} />
+      )}
       <Routes>
+        <Route exact path="/" element={<Login login={login} />} />
+
         <Route
           exact
-          path="/"
+          path="/home"
           element={<Cards onClose={onClose} characters={characters} />}
         />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/favorites" element={<Favorites />} />
         <Route path="/detail/:detailId" element={<Detail detailId />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <ScrollToTop smooth className="upButton" color="transparent" />
       <div className="footer">
-        <h4>Daniel Cordero - Desde Venezuela con ♥</h4>
+        <h4>Daniel Cordero - Desde Venezuela con 💚</h4>
       </div>
     </div>
   );
