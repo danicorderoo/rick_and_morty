@@ -1,9 +1,11 @@
 import React from "react";
 import Card from "../Card/Card";
 import styles from "./Cards.module.css";
+import { useSelector } from "react-redux";
 
 export default function Cards(props) {
-  const { characters } = props;
+  // const { characters } = props;
+  let characters = useSelector((state) => state.myCharacters);
   return (
     <div className={styles.Container}>
       <div className={styles.cartas}>

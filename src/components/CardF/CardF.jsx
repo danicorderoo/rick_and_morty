@@ -57,7 +57,7 @@ export default function Card(props) {
   const handleFavorite = () => {
     if (isFav === true) {
       setIsFav(false);
-      dispatch(actions.delteFavorite(props.id));
+      dispatch(actions.deleteFavorite(props.id));
     }
     if (isFav === false) {
       setIsFav(true);

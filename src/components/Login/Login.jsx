@@ -45,17 +45,14 @@ export default function About(props) {
     event.preventDefault();
 
     if (!errors.password && !errors.username) {
-      console.log("pasa");
       props.login(userDate);
-    } else {
-      console.log("no pasa");
     }
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className={styles.Search}>
+        <div className={styles.Contenedor}>
           <label>Username: </label>
           <input
             className={styles.Entrada}
@@ -65,18 +62,30 @@ export default function About(props) {
             value={userDate.username}
             onChange={handleInputChange}
           />
-          {errors.username ? <p>{errors.username}</p> : <h5>ok</h5>}
+          {errors.username ? (
+            <p className={styles.danger}>
+              <strong>{errors.username}</strong>
+            </p>
+          ) : (
+            <p className={styles.ok}>ok</p>
+          )}
 
           <label>Password: </label>
           <input
             className={styles.Entrada}
             name="password"
-            type="text"
+            type="password"
             placeholder="Ingrese su Contraseña..."
             value={userDate.password}
             onChange={handleInputChange}
           />
-          {errors.password ? <p>{errors.password}</p> : <h5>ok</h5>}
+          {errors.password ? (
+            <p className={styles.danger}>
+              <strong>{errors.password}</strong>
+            </p>
+          ) : (
+            <p className={styles.ok}>ok</p>
+          )}
 
           <button className={styles.Buttons} type="submit">
             Login

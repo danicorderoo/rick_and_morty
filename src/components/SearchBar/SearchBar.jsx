@@ -1,17 +1,29 @@
 import React, { useState } from "react";
 import styles from "./SearchBar.module.css";
 import ReactTooltip from "react-tooltip";
+import { useDispatch } from "react-redux";
+import * as actions from "../../redux/actions/index";
 
 export default function SearchBar(props) {
   const [id, setId] = useState("");
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
     setId(event.target.value);
   };
 
-  const handleClick = (event) => {
+  const handleClickAdd = () => {
+    dispatch(actions.addCard(id));
     setId("");
-    props.onSearch(id);
+    // props.onSearch(id);
+  };
+
+  const handleClickRandom = () => {
+    dispatch(actions.addCard(Math.floor(Math.random() * 826)));
+  };
+
+  const handleClickAll = () => {
+    dispatch(actions.addAll());
   };
 
   return (
@@ -32,21 +44,21 @@ export default function SearchBar(props) {
           className={styles.Buttons}
           data-tip
           data-for="romdomTip"
-          onClick={() => props.onSearch(Math.floor(Math.random() * 826))}>
+          onClick={handleClickRandom}>
           Ramdon
         </button>
         <button
           className={styles.Buttons}
           data-tip
           data-for="searchTip"
-          onClick={handleClick}>
+          onClick={handleClickAdd}>
           Agregar
         </button>
         <button
           className={styles.Buttons}
           data-tip
           data-for="allTip"
-          onClick={() => props.onSearchAll()}>
+          onClick={handleClickAll}>
           <strong>All</strong>
         </button>
       </div>
