@@ -85,7 +85,7 @@
   background-size: 120%;
   background-position: 50% 0%;
   color: white;
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgb(247, 121, 3);
 }
 
 .cronenberg:hover {
@@ -100,6 +100,7 @@
 
 .divImg {
   transition: 0.7s;
+  height: 300px;
 }
 
 img {
@@ -138,6 +139,7 @@ img {
 }
 
 .Container {
+  background-color: #1c1b1b;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -157,9 +159,10 @@ img {
 
 .DivFooter {
   font-size: 12px;
-  height: 100px;
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
+  align-items: center;
   margin-left: 10px;
   margin-right: 10px;
   justify-content: space-between;
@@ -172,14 +175,18 @@ img {
   transition: 1s;
   height: 31em;
   width: 18em;
-  background-color: rgb(0, 0, 0, 0.9);
   color: gray;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../img/ChargeVectorThin-d9qdR.ttf") format("truetype");
 }
 
 .alert {
   font-size: 18px;
   font-family: "MyFont";
-  font-weight: bolder;
+  color: #c82a2a;
 }
 
 .hearth {

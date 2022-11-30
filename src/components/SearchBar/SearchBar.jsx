@@ -62,23 +62,31 @@ export default function SearchBar(props) {
           <strong>All</strong>
         </button>
       </div>
-
       <ReactTooltip
         id="romdomTip"
         place="bottom"
-        effect="left"
+        effect="solid"
         delayShow={2000}>
         AGREGA ALEATORIO
       </ReactTooltip>
-      <ReactTooltip id="searchTip" place="left" effect="solid" delayShow={2000}>
+      <ReactTooltip
+        id="searchTip"
+        place="bottom"
+        effect="solid"
+        delayShow={2000}>
         AGREGA ID
       </ReactTooltip>
-      <ReactTooltip id="inputTip" place="left" effect="solid" delayShow={2000}>
+      <ReactTooltip
+        id="inputTip"
+        place="bottom"
+        effect="solid"
+        delayShow={2000}>
         Ingresa el ID
       </ReactTooltip>
-      <ReactTooltip id="allTip" place="left" effect="solid" delayShow={2000}>
+      <ReactTooltip id="allTip" place="bottom" effect="solid" delayShow={2000}>
         AGREGA TODAS
       </ReactTooltip>
+      ;
     </div>
   );
 }

@@ -5,7 +5,6 @@ import ReactTooltip from "react-tooltip";
 import { useDispatch, useSelector } from "react-redux";
 import * as actions from "../../redux/actions/index";
 import { useState, useEffect } from "react";
-import Swal from "sweetalert2";
 
 export default function Card(props) {
   var especie = styles.divBack;
@@ -67,28 +66,8 @@ export default function Card(props) {
   };
 
   const handleClose = () => {
-    Swal.fire({
-      customClass: styles.alert,
-      position: "top",
-      title: "¿Estás seguro?",
-      text: "Quieres eliminar esta carta",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonText: "Sí... ¡ELIMINAR!",
-      cancelButtonText: "No",
-      backdrop: `
-      rgba(32, 35, 41, 0.7)
-      url("http://www.animated-gifs.fr/category_cartoons/rick-morty/rick-and-morty-88484938.gif")
-      left bottom
-      no-repeat
-    `,
-      reverseButtons: true,
-    }).then((result) => {
-      if (result.isConfirmed) {
-        dispatch(actions.closeCard(props.id));
-        dispatch(actions.deleteFavorite(props.id));
-      }
-    });
+    dispatch(actions.closeCard(props.id));
+    dispatch(actions.deleteFavorite(props.id));
   };
 
   return (

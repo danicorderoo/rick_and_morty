@@ -3,17 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
-}
-
-.Container {
-  background-color: rgba(32, 35, 41, 0.9);
-  border-bottom: #c0df40 solid 1px;
-  border-top: #c0df40 solid 1px;
-  padding-top: 35px;
-  padding-bottom: 20px;
-  margin-bottom: -415px;
-  color: #c0df40;
+  align-items: space-evenly;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .conter {
@@ -28,11 +20,225 @@
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
   -webkit-animation-name: parpadeo;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+}
+
+.all {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/all.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.male {
+  height: 4em;
+  width: 4em;
+  background-color: #513390;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/male.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.famale {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-color: #513390;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/famale.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.genderless {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-color: #513390;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/genderless.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.unknown {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-color: #513390;
+  background-image: url(../../img/unknown.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.all:hover {
+  box-shadow: 0px 0px 20px #8db001;
+  transform: scaleX(-1);
+}
+
+.male:hover {
+  box-shadow: 0px 0px 20px #8db001;
+  transform: scaleX(-1);
+}
+
+.famale:hover {
+  box-shadow: 0px 0px 20px #8db001;
+  transform: scaleX(-1);
+}
+
+.genderless:hover {
+  box-shadow: 0px 0px 20px #8db001;
+  transform: scaleX(-1);
+}
+
+.unknown:hover {
+  box-shadow: 0px 0px 20px #8db001;
+  transform: scaleX(-1);
+}
+.all:focus {
+  box-shadow: 0px 0px 15px #b6e204;
+  transform: scaleX(-1);
+}
+
+.famale:focus {
+  box-shadow: 0px 0px 15px #b6e204;
+  transform: scaleX(-1);
+}
+
+.male:focus {
+  box-shadow: 0px 0px 15px #b6e204;
+  transform: scaleX(-1);
+}
+
+.genderless:focus {
+  box-shadow: 0px 0px 15px #b6e204;
+  transform: scaleX(-1);
+}
+
+.unknown:focus {
+  box-shadow: 0px 0px 15px #b6e204;
+  transform: scaleX(-1);
+}
+
+.rick {
+  position: absolute;
+  margin-top: -48px;
+  /* margin-top: -100px; */
+  margin-left: -280px;
+  animation-name: movimiento;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: reverse;
+  z-index: 1;
+}
+
+.Container {
+  background-color: rgba(32, 35, 41, 0.9);
+  border-bottom: #c0df40 solid 1px;
+  border-top: #c0df40 solid 1px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-bottom: -415px;
+  margin-top: 90px;
+  color: #c0df40;
+}
+
+.Botonera {
+  height: 70px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  margin-top: 107px;
+  /* margin-left: 3rem; */
+  background-color: rgba(32, 35, 41, 0.9);
+}
+
+.animContainer {
+  animation-name: inclina;
+  animation-duration: 7s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+  /* animation-direction: alternate-reverse; */
+}
+
+.animBotonera {
+  animation-name: aparece;
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-direction: normal;
+}
+
+@keyframes aparece {
+  0% {
+    clip-path: polygon(0 53%, 100% 51%, 100% 51%, 0 53%);
+  }
+  25% {
+    clip-path: polygon(0 53%, 100% 51%, 100% 0, 0 53%);
+  }
+  50% {
+    clip-path: polygon(0 53%, 100% 51%, 100% 0, 0 100%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  85% {
+    clip-path: polygon(0 0, 100% 0, 100% 61%, 0 61%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes inclina {
+  0% {
+    transform: skewY(-0.5deg);
+  }
+  33.33% {
+    transform: skewY(2deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes movimiento {
+  to {
+    transform: translateX(510%);
+  }
 }
 
 @-moz-keyframes parpadeo {
@@ -68,5 +274,23 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 799px) {
+  .Container {
+    margin-top: 200px;
+  }
+  .Botonera {
+    margin-top: 135px;
+  }
+}
+
+@media (max-width: 519px) {
+  .Container {
+    margin-top: 245px;
+  }
+  .Botonera {
+    margin-top: 175px;
   }
 }

@@ -5,40 +5,37 @@
   padding: 10px;
   width: 100%;
   top: 0;
-  height: 6em;
   position: fixed;
   background-color: rgb(0, 0, 0);
   border-bottom: #c0df40 solid 1px;
   overflow: hidden;
-}
-
-.menu {
-  display: flex;
-  gap: 20px;
-}
-
-.sub {
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
 .divTitle {
-  height: 10em;
-  width: 60em;
+  height: 90px;
+  width: 250px;
+  margin-bottom: -30px;
+  margin-top: -30px;
   background-image: url(../../img/title.gif);
   background-repeat: no-repeat;
-  background-position: -9%;
-  background-size: 40%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
 }
 
 .home {
   top: 0;
   height: 5em;
   width: 5em;
-  margin-left: 30em;
-  margin-top: 4em;
   border-radius: 50%;
-  border-color: rgba(191, 223, 64, 0.5);
+  border-color: #3daec299;
   background-image: url(../../img/planeta-tierra.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -48,17 +45,17 @@
 }
 
 .home:hover {
-  transition: 2s;
-  transform: translateY(-10px);
+  transition: 1.5s;
+  /* transform: translateY(-10px); */
+  transform: rotate(1800deg);
   box-shadow: 0px 0px 40px #8db001;
 }
 
 .about {
   height: 5em;
   width: 5em;
-  margin-top: 4em;
   border-radius: 50%;
-  border-color: rgba(191, 223, 64, 0.5);
+  border-color: #3daec299;
   background-image: url(../../img/astronauta.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -68,55 +65,51 @@
 }
 
 .about:hover {
-  transition: 2s;
-  transform: translateY(-10px);
+  transition: 1.5s;
+  /* transform: translateY(-10px); */
+  transform: rotate(1800deg);
   box-shadow: 0px 0px 40px #8db001;
 }
 
 .favorites {
   height: 5em;
   width: 5em;
-  margin-top: 4em;
   border-radius: 50%;
   background-color: #3daec299;
-  border-color: rgba(191, 223, 64, 0.5);
-  background-image: url(../../img/amor-verde.png);
+  border-color: #3daec299;
+  background-image: url(../../img/portal.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 90%;
+  background-position: 2px center;
+  background-size: 95%;
   transition: 1s;
   cursor: pointer;
 }
 
 .favorites:hover {
-  transition: 2s;
-  transform: translateY(-10px);
+  transition: 1.5s;
+  /* transform: translateY(-10px); */
+  transform: rotate(1800deg);
   box-shadow: 0px 0px 40px #8db001;
 }
 
-@media (max-width: 800px) {
-  .home {
-    margin-bottom: -10px;
-    height: 3em;
-    width: 3em;
+@media (max-width: 799px) {
+  .divTitle {
+    position: static;
+    order: 1;
+    margin-bottom: -2em;
   }
-  .about {
-    height: 3em;
-    width: 3em;
+
+  .menu {
+    margin-bottom: 1em;
   }
 }
 
-@media (max-width: 500px) {
-  .sub {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 519px) {
+  .divTitle {
+    position: static;
   }
-  .home {
-    height: 3em;
-    width: 3em;
-  }
-  .about {
-    height: 3em;
-    width: 3em;
+  .menu {
+    margin-top: -1.5em;
+    margin-bottom: -0.2em;
   }
 }

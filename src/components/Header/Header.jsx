@@ -19,54 +19,52 @@ export default function Header(props) {
 
   return (
     <div className={styles.header}>
-      <div className={styles.sub}>
-        <div className={styles.divTitle}>
-          <div className={styles.menu}>
-            <button
-              data-tip
-              data-for="homeTip"
-              onClick={backToHome}
-              className={styles.home}
-            />
-            <button
-              data-tip
-              data-for="aboutTip"
-              onClick={backToAbout}
-              className={styles.about}
-            />
-            <button
-              data-tip
-              data-for="favoritesTip"
-              onClick={backToFavorites}
-              className={styles.favorites}
-            />
-            <ReactTooltip
-              id="homeTip"
-              place="bottom"
-              effect="solid"
-              delayShow={2000}>
-              HOME
-            </ReactTooltip>
-            <ReactTooltip
-              id="aboutTip"
-              place="bottom"
-              effect="solid"
-              delayShow={2000}>
-              ABOUT
-            </ReactTooltip>
-            <ReactTooltip
-              id="favoritesTip"
-              place="bottom"
-              effect="solid"
-              delayShow={2000}>
-              favorites
-            </ReactTooltip>
-          </div>
-        </div>
+      <div className={styles.divTitle}></div>
+
+      <div className={styles.menu}>
+        <button
+          data-tip
+          data-for="homeTip"
+          onClick={backToHome}
+          className={styles.home}
+        />
+        <button
+          data-tip
+          data-for="aboutTip"
+          onClick={backToAbout}
+          className={styles.about}
+        />
+        <button
+          data-tip
+          data-for="favoritesTip"
+          onClick={backToFavorites}
+          className={styles.favorites}
+        />
+        <ReactTooltip
+          id="homeTip"
+          place="bottom"
+          effect="solid"
+          delayShow={2000}>
+          HOME
+        </ReactTooltip>
+        <ReactTooltip
+          id="aboutTip"
+          place="bottom"
+          effect="solid"
+          delayShow={2000}>
+          ABOUT
+        </ReactTooltip>
+        <ReactTooltip
+          id="favoritesTip"
+          place="bottom"
+          effect="solid"
+          delayShow={2000}>
+          favorites
+        </ReactTooltip>
       </div>
 
       <div>
-        <Bar onSearch={props.onSearch} onSearchAll={props.onSearchAll} />
+        <Bar />
       </div>
     </div>
   );

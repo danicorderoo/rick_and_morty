@@ -6,12 +6,15 @@ import {
   CLOSE_CARD,
   ADD_CARD,
   ADD_CARD_ALL,
+  FILTER,
+  ORDER_MENOR,
+  ORDER_MAYOR,
 } from "../actions";
 
 const initialState = {
   myFavorites: [],
   myCharacters: [],
-  detailCharacter: {},
+  allCharacters: [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -31,13 +34,14 @@ const rootReducer = (state = initialState, action) => {
         ),
       };
     }
-    case CLOSE_CARD:
+    case CLOSE_CARD: {
       return {
         ...state,
         myCharacters: state.myCharacters.filter(
           (character) => character.id !== action.payload
         ),
       };
+    }
 
     case ADD_CARD:
       if (!action.payload.name) {
@@ -53,7 +57,7 @@ const rootReducer = (state = initialState, action) => {
           color: "#716add",
           background: "#fff url(/images/trees.png)",
           html: `
-          <h3>No existe ese ID en la <a href="https://rickandmortyapi.com/documentation/#character">API</a></h3>`,
+          <h3>No existe ese ID en la <a href="https://rickandmortyapi.com/documentation/#character" target="_blank">API</a></h3>`,
           backdrop: `
             rgba(32, 35, 41, 0.7)
             url("http://www.animated-gifs.fr/category_cartoons/rick-morty/rick-and-morty-65285982.gif")
@@ -75,7 +79,7 @@ const rootReducer = (state = initialState, action) => {
             title: "¡Solo es Ciencia Amigo!",
             timer: 6000,
             timerProgressBar: true,
-            width: 400,
+            width: 600,
             padding: "3em",
             color: "#716add",
             background: "#fff url(/images/trees.png)",
@@ -105,6 +109,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myCharacters: [...state.myCharacters, action.payload],
+        allCharacters: [...state.allCharacters, action.payload],
       };
 
     case ADD_CARD_ALL:
@@ -121,6 +126,35 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myCharacters: [...action.payload],
+        allCharacters: [...action.payload],
+      };
+
+    case FILTER:
+      if (action.payload === "All") {
+        return {
+          ...state,
+          myCharacters: state.allCharacters,
+        };
+      }
+
+      return {
+        ...state,
+        myCharacters: state.allCharacters.filter(
+          // eslint-disable-next-line eqeqeq
+          (character) => character.gender.toString() === action.payload
+        ),
+      };
+
+    case ORDER_MENOR:
+      return {
+        ...state,
+        myFavorites: state.myFavorites.sort((a, b) => a.id - b.id),
+      };
+
+    case ORDER_MAYOR:
+      return {
+        ...state,
+        myFavorites: state.myFavorites.sort((a, b) => b.id - a.id),
       };
 
     default:

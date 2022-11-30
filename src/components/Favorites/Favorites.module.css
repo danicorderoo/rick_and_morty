@@ -1,72 +1,137 @@
 .cartas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: -25px;
+}
+
+.Botonera {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.menor {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-color: #513390;
+  background-image: url(../../img/flecha-abajo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.mayor {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-color: #513390;
+  border-color: rgba(191, 223, 64, 0.5);
+  background-image: url(../../img/flecha-arriba.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.menor:hover {
+  transition: 2s;
+  transform: translateY(10px);
+  box-shadow: 0px 0px 20px #8db001;
+}
+.mayor:hover {
+  transition: 2s;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px #8db001;
+}
+
+.Container {
+  background-color: rgba(32, 35, 41, 0.9);
+  border-bottom: #c0df40 solid 1px;
+  border-top: #c0df40 solid 1px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin-bottom: -415px;
+  color: #c0df40;
+  margin-top: -45px;
+}
+
+.conter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-text-stroke: 0.1px #3daec2ab;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
   }
-  
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 799px) {
   .Container {
-    background-color: rgba(32, 35, 41, 0.9);
-    border-bottom: #c0df40 solid 1px;
-    border-top: #c0df40 solid 1px;
-    padding-top: 35px;
-    padding-bottom: 20px;
-    margin-bottom: -415px;
-    color: #c0df40;
+    margin-top: 220px;
   }
-  
-  .conter {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    -webkit-text-stroke: 0.1px #3daec2ab;
+}
+
+@media (max-width: 519px) {
+  .Container {
+    margin-top: 245px;
   }
-  
-  .parpadea {
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  
-    -webkit-animation-name: parpadeo;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  @-moz-keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}
+
+.textFavorite {
+}

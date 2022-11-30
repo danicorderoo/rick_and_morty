@@ -33,10 +33,18 @@ export default function Detail(props) {
         </div>
 
         <div className={styles.infos}>
-          <h2>NOMBRE: {character.name}</h2>
-          <h2>STATUS: {character.status}</h2>
-          <h2>ESPECIE: {character.species}</h2>
-          <h2>GENERO: {character.gender}</h2>
+          <div className={styles.animName}>
+            <h2>NOMBRE: {character.name}</h2>
+          </div>
+          <div className={styles.animStatus}>
+            <h2>STATUS: {character.status}</h2>
+          </div>
+          <div className={styles.animEspecie}>
+            <h2>ESPECIE: {character.species}</h2>
+          </div>
+          <div className={styles.animGender}>
+            <h2>GENERO: {character.gender}</h2>
+          </div>
         </div>
       </div>
     </div>

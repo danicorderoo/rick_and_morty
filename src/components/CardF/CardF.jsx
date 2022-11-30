@@ -69,19 +69,26 @@ export default function Card(props) {
     <div className={`${styles.Container} ${especie}`}>
       <div className={styles.DivHeader}>
         <h2>{props.name}</h2>
-        {isFav ? (
-          <button
-            className={`${styles.hearth} ${styles.onHearth}`}
-            onClick={handleFavorite}>
-            💚
-          </button>
-        ) : (
-          <button
-            className={`${styles.hearth} ${styles.offHearth}`}
-            onClick={handleFavorite}>
-            🤍
-          </button>
-        )}
+        <div className={styles.Botonera}>
+          {isFav ? (
+            <button
+              className={`${styles.hearth} ${styles.onHearth}`}
+              onClick={handleFavorite}>
+              💚
+            </button>
+          ) : (
+            <button
+              className={`${styles.hearth} ${styles.offHearth}`}
+              onClick={handleFavorite}>
+              🤍
+            </button>
+          )}
+
+          <p>
+            ID
+            <strong>{props.id}</strong>
+          </p>
+        </div>
       </div>
 
       <div className={styles.divImg}>

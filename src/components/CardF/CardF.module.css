@@ -1,237 +1,236 @@
 .human:hover {
-    transition: 3s;
-    background-image: url(../../img/tierra.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 20% -45%;
-    color: white;
-    box-shadow: 0px 0px 20px rgba(92, 187, 255, 1);
+  transition: 3s;
+  background-image: url(../../img/tierra.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(92, 187, 255, 1);
+}
+
+.alien:hover {
+  transition: 3s;
+  background-image: url(../../img/alien.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 55% -60%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(21, 185, 48);
+}
+
+.robot:hover {
+  transition: 3s;
+  background-image: url(../../img/robot.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% -130%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.humanoid:hover {
+  transition: 3s;
+  background-image: url(../../img/humanoid.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(184, 22, 22);
+}
+
+.mythological:hover {
+  transition: 3s;
+  background-image: url(../../img/mythological.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 0 -53.5%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(210, 225, 8);
+}
+
+.animal:hover {
+  transition: 3s;
+  background-image: url(../../img/animal.jpg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: 20% -45%;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgb(222, 135, 13);
+}
+
+.poopy:hover {
+  transition: 3s;
+  background-image: url(../../img/poopy.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 55% -25%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(57, 45, 5);
+}
+
+.unknown:hover {
+  transition: 3s;
+  background-image: url(../../img/unknown.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 20% -45%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.default:hover {
+  transition: 3s;
+  background-image: url(../../img/Anatomy_Park_7.webp);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50% 0%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(247, 121, 3);
+}
+
+.cronenberg:hover {
+  transition: 3s;
+  background-image: url(../../img/cronenberg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20% -10%;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(255, 0, 200);
+}
+
+.divImg {
+  transition: 0.7s;
+  height: 300px;
+  width: 300px;
+}
+
+.divImg:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 140px;
+}
+
+.Buttons {
+  border-radius: 5px;
+  border-color: transparent;
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.Buttons:hover {
+  background-color: #c82a2a;
+  font-size: 0.7em;
+  box-shadow: 0px 0px 15px #c82a2a;
+  transition: 1s;
+}
+
+.DivFooter {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+.Container {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: 1s;
+  height: 31em;
+  width: 18em;
+  background-color: #1c1b1b;
+  color: gray;
+}
+
+.DivHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.hearth {
+  font-size: 1.6em;
+  border-color: transparent;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.onHearth:hover {
+  animation-name: parpadeo;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.offHearth:hover {
+  animation-name: parpadeo;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.Botonera {
+  display: flex;
+  margin-right: 5px;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
   }
-  
-  .alien:hover {
-    transition: 3s;
-    background-image: url(../../img/alien.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 55% -60%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(21, 185, 48);
+  50% {
+    opacity: 0;
   }
-  
-  .robot:hover {
-    transition: 3s;
-    background-image: url(../../img/robot.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 50% -130%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  100% {
+    opacity: 1;
   }
-  
-  .humanoid:hover {
-    transition: 3s;
-    background-image: url(../../img/humanoid.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 20% -45%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(184, 22, 22);
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
   }
-  
-  .mythological:hover {
-    transition: 3s;
-    background-image: url(../../img/mythological.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 0 -53.5%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(210, 225, 8);
+  50% {
+    opacity: 0;
   }
-  
-  .animal:hover {
-    transition: 3s;
-    background-image: url(../../img/animal.jpg);
-    background-repeat: no-repeat;
-    background-size: 160%;
-    background-position: 20% -45%;
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 20px rgb(222, 135, 13);
+  100% {
+    opacity: 1;
   }
-  
-  .poopy:hover {
-    transition: 3s;
-    background-image: url(../../img/poopy.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 55% -25%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(57, 45, 5);
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
   }
-  
-  .unknown:hover {
-    transition: 3s;
-    background-image: url(../../img/unknown.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 20% -45%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  50% {
+    opacity: 0;
   }
-  
-  .default:hover {
-    transition: 3s;
-    background-image: url(../../img/Anatomy_Park_7.webp);
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: 50% 0%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  100% {
+    opacity: 1;
   }
-  
-  .cronenberg:hover {
-    transition: 3s;
-    background-image: url(../../img/cronenberg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 20% -10%;
-    color: white;
-    box-shadow: 0px 0px 20px rgb(255, 0, 200);
-  }
-  
-  .divImg {
-    transition: 0.7s;
-    height: 300px;
-    width: 300px;
-  }
-  
-  .divImg:hover {
-    transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 140px;
-  }
-  
-  .Buttons {
-    border-radius: 5px;
-    border-color: transparent;
-    margin: 5px;
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .Buttons:hover {
-    background-color: #c82a2a;
-    font-size: 0.7em;
-    box-shadow: 0px 0px 15px #c82a2a;
-    transition: 1s;
-  }
-  
-  .Container {
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    transition: 1s;
-    height: 32em;
-    width: 18em;
-  }
-  
-  .DivHeader {
-    display: flex;
-    height: 100px;
-    padding: 12px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .DivFooter {
-    font-size: 12px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-content: space-between;
-  }
-  
-  .Container {
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    transition: 1s;
-    height: 31em;
-    width: 18em;
-    background-color: rgb(0, 0, 0, 0.9);
-    color: gray;
-  }
-  
-  .hearth {
-    font-size: 1.6em;
-    border-color: transparent;
-    background-color: transparent;
-    height: 40px;
-    width: 40px;
-  
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .onHearth:hover {
-    animation-name: parpadeo;
-    animation-duration: 0.7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: parpadeo;
-    -webkit-animation-duration: 0.7s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  .offHearth:hover {
-    animation-name: parpadeo;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: parpadeo;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  @-moz-keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}
