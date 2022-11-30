@@ -291,6 +291,31 @@
     margin-top: 245px;
   }
   .Botonera {
+    width: 100%;
     margin-top: 175px;
+  }
+  .all {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .male {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .famale {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .genderless {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .unknown {
+    height: 2.5em;
+    width: 2.5em;
   }
 }

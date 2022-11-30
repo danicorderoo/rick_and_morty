@@ -97,6 +97,7 @@
     position: static;
     order: 1;
     margin-bottom: -2em;
+    z-index: -1;
   }
 
   .menu {
@@ -107,9 +108,25 @@
 @media (max-width: 519px) {
   .divTitle {
     position: static;
+    order: 1;
+    z-index: -1;
   }
   .menu {
-    margin-top: -1.5em;
+    margin-top: 0em;
     margin-bottom: -0.2em;
+  }
+  .home {
+    height: 3em;
+    width: 3em;
+  }
+
+  .about {
+    height: 3em;
+    width: 3em;
+  }
+
+  .favorites {
+    height: 3em;
+    width: 3em;
   }
 }
