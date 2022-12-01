@@ -11,6 +11,7 @@
   border-bottom: #c0df40 solid 1px;
   overflow: hidden;
   flex-wrap: wrap-reverse;
+  margin-left: -10px;
 }
 
 .divTitle {
