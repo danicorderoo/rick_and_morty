@@ -183,7 +183,6 @@
   margin: auto;
   z-index: -1;
   margin-top: 107px;
-  /* margin-left: 3rem; */
   background-color: rgba(32, 35, 41, 0.9);
 }
 
@@ -293,6 +292,7 @@
   .Botonera {
     width: 100%;
     margin-top: 175px;
+    align-items: center;
   }
   .all {
     height: 2.5em;

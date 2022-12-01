@@ -121,7 +121,7 @@
   }
 }
 
-@media (max-width: 799px) {
+/* @media (max-width: 799px) {
   .Container {
     margin-top: 220px;
   }
@@ -131,7 +131,4 @@
   .Container {
     margin-top: 245px;
   }
-}
-
-.textFavorite {
-}
+} */

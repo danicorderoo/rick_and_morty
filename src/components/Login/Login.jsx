@@ -50,7 +50,7 @@ export default function About(props) {
   };
 
   return (
-    <div>
+    <div className={styles.celda}>
       <form onSubmit={handleSubmit}>
         <div className={styles.Contenedor}>
           <label>Username: </label>
