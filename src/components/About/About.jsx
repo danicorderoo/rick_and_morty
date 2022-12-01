@@ -43,7 +43,7 @@ export default function About(props) {
         <div className={styles.portal}></div>
       </div>
       <p>
-        <strong>Hola, soy Daniel</strong> este proyecto fue creado con:{" "}
+        <strong>Hola, Soy Daniel</strong> este proyecto fue creado con:{" "}
       </p>
       <ul className={styles.unorderedList}>
         {techSkills.map((skill) => (
@@ -61,7 +61,7 @@ export default function About(props) {
       </ul>
       <br />
       <p>
-        para mas información o dejar tu feedback, contactame en{" "}
+        Para más información o dejar tu feedback, contáctame en{" "}
         <a href="https://www.linkedin.com/in/dcordero-ing/" target="_blank">
           <strong>linkedIn</strong>
         </a>
