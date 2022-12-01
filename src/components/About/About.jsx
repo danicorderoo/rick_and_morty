@@ -5,6 +5,8 @@ import htmlImg from "../../assets/html.png";
 import cssImg from "../../assets/css.svg";
 import javascriptImg from "../../assets/javascript.png";
 import reactImg from "../../assets/react.png";
+import linkedin from "../../img/linkedin.png";
+import github from "../../img/github.png";
 import redux from "../../assets/redux.png";
 
 const techSkills = [
@@ -60,12 +62,15 @@ export default function About(props) {
         ))}
       </ul>
       <br />
-      <p>
-        Para más información o dejar tu feedback, contáctame en{" "}
+      <p>Para más información o dejar su feedback, contáctame en </p>
+      <div className={styles.botones}>
         <a href="https://www.linkedin.com/in/dcordero-ing/" target="_blank">
-          <strong>linkedIn</strong>
+          <img src={linkedin} alt="" srcset="" />
         </a>
-      </p>
+        <a href="https://github.com/danicorderoo" target="_blank">
+          <img src={github} alt="" srcset="" />
+        </a>
+      </div>
     </div>
   );
 }

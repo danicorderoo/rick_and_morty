@@ -26,9 +26,6 @@
 }
 
 .portal {
-  /* position: absolute;
-  top: 160px;
-  left: 10%; */
   height: 6em;
   width: 6em;
   border-radius: 50%;
@@ -113,4 +110,16 @@
   .titulo {
     flex-direction: column;
   }
+}
+
+.botones img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
