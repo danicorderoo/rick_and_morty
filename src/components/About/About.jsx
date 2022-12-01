@@ -38,9 +38,10 @@ const techSkills = [
 export default function About(props) {
   return (
     <div className={styles.container}>
-      <h1>ABOUT</h1>
-
-      <div className={styles.portal}></div>
+      <div className={styles.titulo}>
+        <h1>ABOUT</h1>
+        <div className={styles.portal}></div>
+      </div>
       <p>
         <strong>Hola, soy Daniel</strong> este proyecto fue creado con:{" "}
       </p>

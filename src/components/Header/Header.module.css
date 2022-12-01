@@ -16,8 +16,8 @@
 .divTitle {
   height: 90px;
   width: 250px;
-  margin-bottom: -30px;
-  margin-top: -30px;
+  margin-bottom: 10px;
+  margin-top: -20px;
   background-image: url(../../img/title.gif);
   background-repeat: no-repeat;
   background-position: center center;

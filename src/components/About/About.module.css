@@ -18,10 +18,17 @@
   margin-top: -45px;
 }
 
+.titulo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
 .portal {
-  position: absolute;
+  /* position: absolute;
   top: 160px;
-  left: 10%;
+  left: 10%; */
   height: 6em;
   width: 6em;
   border-radius: 50%;
@@ -92,14 +99,18 @@
   margin: 15px;
 }
 
-/* @media (max-width: 799px) {
+@media (max-width: 799px) {
   .container {
-    margin-top: 220px;
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 519px) {
   .container {
-    margin-top: 245px;
+    margin-top: 176px;
   }
-} */
+
+  .titulo {
+    flex-direction: column;
+  }
+}
