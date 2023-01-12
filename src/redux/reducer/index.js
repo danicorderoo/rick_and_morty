@@ -140,7 +140,6 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myCharacters: state.allCharacters.filter(
-          // eslint-disable-next-line eqeqeq
           (character) => character.gender.toString() === action.payload
         ),
       };

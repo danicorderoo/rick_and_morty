@@ -123,3 +123,12 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+a {
+  text-decoration: none;
+  color: #c0df40;
+}
+
+a:hover {
+  color: #3daec299;
+}
