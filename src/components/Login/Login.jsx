@@ -52,8 +52,14 @@ export default function About(props) {
   return (
     <div className={styles.celda}>
       <form onSubmit={handleSubmit}>
+        <div className={styles.tarjeta}>
+          <label>Username de ingreso:</label>
+          <h3>danielc@soyhenry.com</h3>
+          <label>Password de ingreso:</label>
+          <h3>Daniel.1</h3>
+        </div>
         <div className={styles.Contenedor}>
-          <label>Username: </label>
+          <label>Mail</label>
           <input
             className={styles.Entrada}
             name="username"
