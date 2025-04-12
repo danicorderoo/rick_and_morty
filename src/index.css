@@ -8,6 +8,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: auto;
+  letter-spacing: 3px;
 }
 
 code {

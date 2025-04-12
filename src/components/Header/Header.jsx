@@ -8,7 +8,7 @@ export default function Header(props) {
   const navigate = useNavigate();
 
   const backToHome = () => {
-    navigate("/home");
+    navigate("/");
   };
   const backToAbout = () => {
     navigate("/about");
@@ -44,21 +44,24 @@ export default function Header(props) {
           id="homeTip"
           place="bottom"
           effect="solid"
-          delayShow={2000}>
+          delayShow={2000}
+        >
           HOME
         </ReactTooltip>
         <ReactTooltip
           id="aboutTip"
           place="bottom"
           effect="solid"
-          delayShow={2000}>
+          delayShow={2000}
+        >
           ABOUT
         </ReactTooltip>
         <ReactTooltip
           id="favoritesTip"
           place="bottom"
           effect="solid"
-          delayShow={2000}>
+          delayShow={2000}
+        >
           favorites
         </ReactTooltip>
       </div>

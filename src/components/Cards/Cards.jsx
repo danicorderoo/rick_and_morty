@@ -74,35 +74,40 @@ export default function Cards(props) {
             id="femaleTip"
             place="top"
             effect="solid"
-            delayShow={2000}>
+            delayShow={2000}
+          >
             FEMALE
           </ReactTooltip>
           <ReactTooltip
             id="maleTip"
             place="top"
             effect="solid"
-            delayShow={2000}>
+            delayShow={2000}
+          >
             MALE
           </ReactTooltip>
           <ReactTooltip
             id="gerderlessTip"
             place="top"
             effect="solid"
-            delayShow={2000}>
+            delayShow={2000}
+          >
             GENDERLESS
           </ReactTooltip>
           <ReactTooltip
             id="unknownTip"
             place="top"
             effect="solid"
-            delayShow={2000}>
+            delayShow={2000}
+          >
             UNKNOWN
           </ReactTooltip>
           <ReactTooltip
             id="todosTip"
             place="top"
             effect="solid"
-            delayShow={2000}>
+            delayShow={2000}
+          >
             ALL
           </ReactTooltip>
         </div>
@@ -110,10 +115,10 @@ export default function Cards(props) {
         <div className={styles.cartas}>
           {characters.length ? null : (
             <div className={styles.conter}>
-              <h1>AGREGA UNA CARTA</h1>
+              <h1 style={{ letterSpacing: "5px" }}>AGREGA UNA CARTA</h1>
               <span className={styles.parpadea}>
-                <strong>
-                  el menu se encuentra en la parte superior de la APP
+                <strong style={{ letterSpacing: "5px" }}>
+                  en la parte superior de la APP
                 </strong>
               </span>
               <hr />

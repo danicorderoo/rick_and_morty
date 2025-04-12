@@ -42,7 +42,6 @@ export default function About(props) {
     <div className={styles.container}>
       <div className={styles.titulo}>
         <h1>ABOUT</h1>
-        <div className={styles.portal}></div>
       </div>
       <p>
         <strong>Hola, Soy Daniel</strong> este proyecto fue creado con:{" "}
@@ -52,7 +51,8 @@ export default function About(props) {
           <button
             className={`${styles.listItem} ${styles.listItem.img}`}
             key={skill}
-            onclick="<a href=www.google.com></a>">
+            onclick="<a href=www.google.com></a>"
+          >
             <a href={skill.link} target="_blank">
               <strong>{skill.tech}</strong>
             </a>
