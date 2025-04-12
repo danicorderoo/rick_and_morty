@@ -115,9 +115,11 @@ export default function Cards(props) {
         <div className={styles.cartas}>
           {characters.length ? null : (
             <div className={styles.conter}>
-              <h1 style={{ letterSpacing: "5px" }}>AGREGA UNA CARTA</h1>
+              <h1 style={{ letterSpacing: "5px", textAlign: "center" }}>
+                AGREGA UNA CARTA
+              </h1>
               <span className={styles.parpadea}>
-                <strong style={{ letterSpacing: "5px" }}>
+                <strong style={{ letterSpacing: "5px", textAlign: "center" }}>
                   en la parte superior de la APP
                 </strong>
               </span>

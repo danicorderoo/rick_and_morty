@@ -13,6 +13,7 @@
   align-items: center;
   flex-direction: column;
   -webkit-text-stroke: 0.1px #3daec2ab;
+  padding: 0 10px;
 }
 
 .parpadea {
@@ -24,6 +25,7 @@
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+  text-align: center;
 }
 
 .all {
